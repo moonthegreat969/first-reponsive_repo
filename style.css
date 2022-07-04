@@ -1,0 +1,421 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+:root{
+    font-size:16px;
+}
+
+body{
+}
+
+.inner{
+    margin: 100px 0;
+    align-self:center;
+    width: 75%;
+    background:white;
+    box-shadow: 10px 10px rgba(50,50,50);
+}
+header {
+    position: relative;
+    width:100%;
+    height:40px;
+    background-color: white;
+    display:flex;
+    justify-content: flex-start;
+}
+
+header > span{
+    align-self:center;
+    margin: 0 0 0 50px;
+    font-size: 15px;
+    color:red;
+    font-weight:bold;
+    font-family: verdana;
+}
+
+.inner > article{
+    width:100%;
+    height:300px;
+    background-color: red;
+    display:flex;
+    justify-content: flex-start;
+}
+
+
+article > div:nth-of-type(1){
+    color:white;
+    height: 80%;
+    width: 40%;
+    margin: 50px 0 50px 80px;
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+article > div:nth-of-type(1) > p:nth-of-type(1){
+    color:white;
+    font-size: 30px;
+    font-weight:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 40px 20px 40px 20px;
+    height: 40px;
+}
+
+article > div:nth-of-type(1) > p:nth-of-type(2){
+    color:white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-wrap: break-word;
+    height:60px;
+    margin: 0 20px 0 20px;
+    transform: translate(0 , -40px)
+}
+article > div:nth-of-type(2){
+    color:white;
+    height: 80%;
+    width: 30%;
+    margin: 50px 0 50px 150px;
+    display:flex;
+    justify-content: center;
+}
+
+article > div:nth-of-type(2) > img{
+    height: 200px;
+    width:200px;
+    align-self:center;
+}
+
+.inner > main{
+    width:100%;
+    height: 300px;
+    background-color:red;
+    display:grid;
+    grid-template-columns: repeat(3 , calc(98%/3));
+    justify-content: space-between;
+}
+
+main > div{
+    background-color:rgb(27, 14, 9);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+main > div:nth-of-type(1) , main > div:nth-of-type(2) {
+    margin-right: 1%;
+}
+
+main > div > p{
+    width: 80%;
+    height: max-content;
+}
+
+main > div > p:nth-of-type(1){
+    font-size: 20px;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 30px auto 15px auto;
+}
+
+main > div > p:nth-of-type(2){
+    font-size: 13px;
+    color: rgb(197, 95, 95);
+    font-family: sans-serif;
+    margin: 15px auto;
+}
+
+.responsive{
+    display:none;
+}
+
+.responsive header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight : bold;
+    font-family : verdana;
+    color : red;
+    background-color: white;
+}
+
+.responsive aside{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.responsive aside span{
+    color: white;
+    font-size:35px;
+    font-weight : bold;
+    font-family : verdana;
+    align-self: center;
+}
+
+.responsive article{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    background: red;
+    margin: -20px 0 0 0;
+}
+
+.responsive article span{
+    height: 80px;
+    width: 65%;
+    margin: 0 auto;
+    align-self: center;
+    color: white;
+    font-family: verdana;
+    font-size: 14px;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+}
+
+.responsive article span p{
+    align-self: center;
+}
+
+.responsive section{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: red;
+}
+
+.responsive section img{
+    height: 80%;
+    object-fit: contain;
+    align-self:center;
+}
+
+.responsive main{
+    height:  50vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+.responsive main div{
+    width: 100%;
+    background: rgb(27, 14, 9);
+    height: max-content;
+}
+
+.responsive main div p:nth-of-type(1){
+    font-size: 20px;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: ;
+    align-self:center;
+    height: 30%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.responsive main div p:nth-of-type(2){
+    font-size: 14px;
+    color:rgb(197, 95, 95);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 70%;
+    padding: 15px;
+}
+
+
+.responsive2{
+    display:none;
+}
+
+.responsive2 header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight : bold;
+    font-family : verdana;
+    color : red;
+    background-color: white;
+}
+
+.responsive2 aside{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+}
+
+.responsive2 aside span{
+    color: white;
+    font-size:35px;
+    font-weight : bold;
+    font-family : verdana;
+    align-self: center;
+}
+
+.responsive2 .first1200-res{
+    height: 300px;
+    background: red;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat( 2 , 1fr);
+}
+
+.responsive2 .first1200-res article {
+    grid-column: 1;
+    display:flex;
+    justify-content: center;
+}
+
+.responsive2 .first1200-res article  span {
+    height: 70%;
+    width: 70%;
+    align-self: center;
+    display:flex;
+    justify-content: center;
+}
+.responsive2 .first1200-res article  span p{
+    font-size: 20px;
+    color: white;
+    font-family: verdana;
+    align-self: center;
+}
+.responsive2 .first1200-res section {
+    grid-column: 2;
+    display:flex;
+    justify-content: center;
+}
+
+.responsive2 .first1200-res section img{
+    height: 75%;
+    align-self: center;
+}
+.responsive2 main{
+    height:  50vh;
+    width: 100%;
+}
+
+.responsive2 main .firstlinegrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.responsive2 main .firstlinegrid div{
+    background: rgb(27, 14, 9);
+    height: 200px;
+}
+
+.responsive2 main .firstlinegrid div p:nth-of-type(1){
+    font-size: 20px;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: ;
+    align-self:center;
+    height: 30%;
+    padding: 10px;
+}
+
+.responsive2 main .firstlinegrid div p:nth-of-type(2){
+    font-size: 14px;
+    color:rgb(197, 95, 95);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 70%;
+    padding: 15px;
+    margin: 0 10%;
+}
+
+.responsive2 .secondlinegrid{
+    width: 50%;
+    margin: 0 auto;    
+    background: rgb(27, 14, 9);
+    height: 200px;
+}
+
+
+.responsive2 main .secondlinegrid p:nth-of-type(1){
+    font-size: 20px;
+    color:white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-self:center;
+    height: 30%;
+    padding: 10px;
+}
+
+.responsive2 main .secondlinegrid p:nth-of-type(2){
+    font-size: 14px;
+    color:rgb(197, 95, 95);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 70%;
+    padding: 15px;
+    margin: 0 10%;
+}
+@media (max-width: 700px){
+    
+    body{
+        width: minmax(430px , 100%);
+        background-color:white;
+        display:block;
+        justify-content:none;
+    }
+
+    .inner{
+        display:none;
+    }
+
+    .responsive{
+        display:block;
+    }
+}
+
+@media (min-width: 700px){
+    body{
+        background-color:white;
+        display:block;
+        justify-content:none;
+    }
+
+    .inner{
+        display:none;
+    }
+
+    .responsive{
+        display:none;
+    }
+
+    .responsive2{
+        display:block;
+    }
+}
+
+@media (min-width: 1100px){
+    body{
+        background-color: palevioletred;
+        display:flex;
+        justify-content: center;
+    }
+
+    .inner{
+        display:block;
+    }
+
+    .responsive{
+        display:none;
+    }
+
+    .responsive2{
+        display:none;
+    }
+}
